@@ -7,3 +7,12 @@ packages:
   gitUrl: https://github.com/siddharthsethi11
   gitUsername: siddharthsethi11
   gitBranch: main
+services:
+- serviceName: project.acme.integrations:createOrder
+  packages:
+  - name: ACMEProject
+    version: "1.0"
+- serviceName: project.acme.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:insertSalesOrderDetail
+  packages:
+  - name: ACMEProject
+    version: "1.0"
